@@ -3,10 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Andres Moron Parcial2.Views.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+            Padding="20"
+            Backgroundcolor="White">
+                <Image
+                Source="">
+                </Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Nota"
+                    TextColor="Black"
+                </label>
+                        <Entry
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        </Entry>
+                        <label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Contents"
+                    TextColor="Black"
+                </label>
+                            <Entry
+                        Grid.Row="1"
+                        Grid.Column="1"
+                            </Entry>
+                </Grid>
+                <ActivitiIndicator>
+
+                </ActivitiIndicator>
+                <Button
+                    BackgroundColor="Blue"
+                    Text="Registrar"
+                </Button>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
